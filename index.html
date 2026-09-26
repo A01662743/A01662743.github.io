@@ -1,240 +1,1075 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Game Developer and Software Engineering portfolio.">
-  <title>Alejandro Contreras Magallanes | Game Developer</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Alejandro Contreras — Software Engineering student and Game Developer portfolio.">
+
+    <title>Alejandro Contreras | Game Developer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
 </head>
 
 <body>
-  <header class="site-header">
-    <nav class="nav container">
-      <a class="brand" href="#top">ACM<span>.</span></a>
 
-      <div class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-      </div>
+<!-- =========================
+     NAVIGATION
+========================= -->
 
-      <a class="nav-github" href="https://github.com/A01662743" target="_blank" rel="noopener noreferrer">
-        GitHub ↗
-      </a>
-    </nav>
-  </header>
+<nav class="navbar">
+    <div class="nav-container">
 
-  <main id="top">
-    <!-- HERO -->
-    <section class="hero container">
-      <div class="hero-copy">
-        <p class="eyebrow">GAME DEVELOPER · SOFTWARE ENGINEERING</p>
-        <h1>I build games,<br><span>systems &amp; experiments.</span></h1>
-        <p class="hero-text">
-          Software Engineering student focused on game development,
-          gameplay systems, technical programming, and interactive experiences.
+        <a href="#hero" class="nav-logo">
+            ACM<span>.</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="#projects">01 Projects</a>
+            <a href="#about">02 About</a>
+            <a href="#ai">03 How I Use AI</a>
+            <a href="#skills">04 Skills</a>
+            <a href="#contact">05 Contact</a>
+        </div>
+
+    </div>
+</nav>
+
+
+<main>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section id="hero" class="hero section">
+
+    <div class="hero-grid">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                SOFTWARE ENGINEERING · GAME DEVELOPMENT
+            </p>
+
+            <h1>
+                Alejandro<br>
+                <span>Contreras Magallanes.</span>
+            </h1>
+
+            <p class="hero-description">
+                Software Engineering student building interactive systems,
+                games, and technical projects with a focus on understanding
+                how things work under the hood.
+            </p>
+
+            <div class="hero-actions">
+
+                <a
+                    href="#projects"
+                    class="button button-primary"
+                >
+                    View Projects ↓
+                </a>
+
+                <a
+                    href="https://github.com/A01662743"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button-secondary"
+                >
+                    GitHub ↗
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-terminal">
+
+            <div class="terminal-header">
+
+                <div class="terminal-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <span class="terminal-title">
+                    alejandro@portfolio:~
+                </span>
+
+            </div>
+
+            <div class="terminal-body">
+
+                <p>
+                    <span class="terminal-green">$</span>
+                    whoami
+                </p>
+
+                <p class="terminal-output">
+                    software_engineering_student
+                </p>
+
+                <p>
+                    <span class="terminal-green">$</span>
+                    focus
+                </p>
+
+                <p class="terminal-output">
+                    game_development
+                </p>
+
+                <p>
+                    <span class="terminal-green">$</span>
+                    mindset
+                </p>
+
+                <p class="terminal-output">
+                    understand → build → test → improve
+                </p>
+
+                <p class="terminal-cursor">
+                    █
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section id="projects" class="section">
+
+    <div class="section-header">
+
+        <div>
+            <p class="section-number">01</p>
+
+            <h2>
+                Projects
+            </h2>
+        </div>
+
+        <p class="section-description">
+            Projects where I have worked on game systems, graphics,
+            architecture, and technical problem solving.
         </p>
 
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects">View projects ↓</a>
-          <a class="button button-secondary" href="https://github.com/A01662743" target="_blank" rel="noopener noreferrer">
-            GitHub ↗
-          </a>
-        </div>
-      </div>
+    </div>
 
-      <div class="hero-terminal">
-        <div class="terminal-bar">
-          <span></span><span></span><span></span>
-        </div>
-        <div class="terminal-body">
-          <p><span class="prompt">$</span> Name</p>
-          <p class="terminal-output">Alejandro Contreras Magallanes</p>
-          <p><span class="prompt">$</span> Education</p>
-          <p class="terminal-output">Instituto Tecnológico de Monterrey Campus Qro.</p>
-          <p><span class="prompt">$</span> Status</p>
-          <p class="terminal-output accent">Designign & Developing...</p>
-        </div>
-      </div>
-    </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section container">
-      <div class="section-heading">
-        <p class="eyebrow">01 — SELECTED WORK</p>
-        <h2>Projects</h2>
-        <p>Three projects that represent the way I like to build: interactive, technical, and game-feel focused.</p>
-      </div>
+    <div class="projects-grid">
 
-      <div class="projects-grid">
 
-        <article class="project-card project-featured">
-          <div class="project-number">01</div>
-          <div class="project-content">
-            <div class="project-meta">
-              <span>UNITY · C# · PYTHON</span>
-              <span><b>TEAM PROJECT</b></span>
+        <!-- FIRE RESCUE -->
+
+        <article class="project-card featured-project">
+
+            <div class="project-top">
+
+                <span class="project-index">
+                    01
+                </span>
+
+                <span class="project-type">
+                    GAME SYSTEMS
+                </span>
+
             </div>
 
-            <h3>Fire Rescue</h3>
+            <div class="project-content">
 
-            <p>
-              A Unity simulation inspired by the board game <em>Flash Point</em>.
-              Unity visualizes the game while Python-based agents process game state
-              and return actions through JSON communication.
-            </p>
+                <h3>
+                    Fire Rescue
+                </h3>
 
-            <div class="tags">
-              <span>Unity</span>
-              <span>C#</span>
-              <span>Python</span>
-              <span>JSON</span>
-              <span>Git</span>
+                <p class="project-subtitle">
+                    <b>Team Project</b>
+                </p>
+
+                <p>
+                    A Unity simulation inspired by the board game Flash Point.
+                    Unity visualizes the game while Python-based agents process
+                    game state and return actions through JSON communication.
+                </p>
+
+                <ul class="project-highlights">
+
+                    <li>
+                        Developed the Unity-side visualization layer,
+                        including HUD, menus, game-state management,
+                        animations, and visual feedback.
+                    </li>
+
+                    <li>
+                        Integrated Unity and Python through JSON-based
+                        communication.
+                    </li>
+
+                    <li>
+                        Designed and implemented a queued visual-event
+                        system to sequence complex explosion effects.
+                    </li>
+
+                </ul>
+
             </div>
 
-            <div class="project-highlight">
-              <strong>Technical highlight</strong>
-              <span>Queued visual events to sequence explosion effects and make gameplay feedback easier to follow.</span>
+            <div class="project-footer">
+
+                <div class="tag-list">
+                    <span>Unity</span>
+                    <span>C#</span>
+                    <span>Python</span>
+                    <span>Mesa</span>
+                    <span>JSON</span>
+                </div>
+
+                <a
+                    href="https://github.com/A01662743/Flashpoint"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                >
+                    GitHub ↗
+                </a>
+
             </div>
 
-            <a class="project-link" href="https://github.com/A01662743/Flashpoint" target="_blank" rel="noopener noreferrer">
-              View on GitHub ↗
-            </a>
-          </div>
         </article>
+
+
+        <!-- BEBE ESCAPA -->
 
         <article class="project-card">
-          <div class="project-number">02</div>
-          <div class="project-content">
-            <div class="project-meta">
-              <span>UNITY · C#</span>
-              <span><b>INDIVIDUAL</b></span>
+
+            <div class="project-top">
+
+                <span class="project-index">
+                    02
+                </span>
+
+                <span class="project-type">
+                    GAME DEVELOPMENT
+                </span>
+
             </div>
 
-            <h3>Bebé Escapa</h3>
+            <div class="project-content">
 
-            <p>
-              A complete one-level 3D game built independently, including gameplay,
-              menus, pause, Win/Lose states, animation, physics, interactions, audio,
-              and camera systems.
-            </p>
+                <h3>
+                    Bebé Escapa
+                </h3>
 
-            <div class="tags">
-              <span>Unity 6.5</span>
-              <span>C#</span>
-              <span>Gameplay</span>
-              <span>Animation</span>
+                <p class="project-subtitle">
+                    <b>Individual Project</b>
+                </p>
+
+                <p>
+                    A one-level 3D game developed individually.
+                    The project includes player movement, animation,
+                    physics, menus, pause, and win/lose states.
+                </p>
+
+                <ul class="project-highlights">
+
+                    <li>
+                        Implemented the complete gameplay loop and
+                        interaction systems.
+                    </li>
+
+                    <li>
+                        Created animations and integrated Cinemachine
+                        for camera behavior.
+                    </li>
+
+                    <li>
+                        Iterated on gameplay using feedback from
+                        multiple testers.
+                    </li>
+
+                </ul>
+
             </div>
 
-            <a class="project-link" href="https://github.com/A01662743/Beb-Escapa-Peluches-Biber-n-Run-3D" target="_blank" rel="noopener noreferrer">
-              View on GitHub ↗
-            </a>
-          </div>
+            <div class="project-footer">
+
+                <div class="tag-list">
+                    <span>Unity</span>
+                    <span>C#</span>
+                    <span>Cinemachine</span>
+                    <span>Physics</span>
+                </div>
+
+                <a
+                    href="https://github.com/A01662743/Beb-Escapa-Peluches-Biber-n-Run-3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                >
+                    GitHub ↗
+                </a>
+
+            </div>
+
         </article>
 
-        <article class="project-card project-cuda">
-          <div class="project-number">03</div>
-          <div class="project-content">
-            <div class="project-meta">
-              <span>C++ · CUDA</span>
-              <span><b>INDIVIDUAL</b></span>
+
+        <!-- CUDA -->
+
+        <article class="project-card">
+
+            <div class="project-top">
+
+                <span class="project-index">
+                    03
+                </span>
+
+                <span class="project-type">
+                    GPU COMPUTING
+                </span>
+
             </div>
 
-            <h3>Sobel Edge Detection</h3>
+            <div class="project-content">
 
-            <p>
-              CPU sequential vs. GPU parallel implementation of Sobel convolution
-              for black-and-white image edge detection.
-            </p>
+                <h3>
+                    CUDA Sobel
+                </h3>
 
-            <div class="metric">
-              <span class="metric-value">~600–700×</span>
-              <span class="metric-label">lower execution time<br>in tested cases</span>
+                <p class="project-subtitle">
+                    <b>Individual Project</b>
+                </p>
+
+                <p>
+                    Implementation of the Sobel convolution operator,
+                    comparing sequential CPU execution against a
+                    parallel GPU implementation.
+                </p>
+
+                <ul class="project-highlights">
+
+                    <li>
+                        Implemented CUDA kernels using
+                        <code>__global__</code> and <code>__device__</code>.
+                    </li>
+
+                    <li>
+                        Distributed image processing across GPU threads.
+                    </li>
+
+                    <li>
+                        <code>~600–700×</code> lower execution time
+                        in tested cases in GPU implementation against CPU sequential execution.
+                    </li>
+
+                </ul>
+
             </div>
 
-            <div class="tags">
-              <span>C++</span>
-              <span>CUDA</span>
-              <span>GPU</span>
-              <span>Parallel Computing</span>
+            <div class="project-footer">
+
+                <div class="tag-list">
+                    <span>CUDA</span>
+                    <span>C++</span>
+                    <span>GPU</span>
+                    <span>Parallel Computing</span>
+                </div>
+
+                <a
+                    href="https://github.com/A01662743/Procesamiento-Digital-de-Im-genes-Operador-de-Convoluci-n-Sobel-en-CPU-Secuencial-vs-GPU-Paralelo-"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                >
+                    GitHub ↗
+                </a>
+
             </div>
 
-            <a class="project-link" href="https://github.com/A01662743/Procesamiento-Digital-de-Im-genes-Operador-de-Convoluci-n-Sobel-en-CPU-Secuencial-vs-GPU-Paralelo-" target="_blank" rel="noopener noreferrer">
-              View on GitHub ↗
-            </a>
-          </div>
         </article>
 
-      </div>
-    </section>
+    </div>
 
-    <!-- ABOUT -->
-    <section id="about" class="section section-alt">
-      <div class="container about-grid">
-        <div class="section-heading">
-          <p class="eyebrow">02 — ABOUT</p>
-          <h2>Engineer first.<br>Game developer by choice.</h2>
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about" class="section">
+
+    <div class="section-header">
+
+        <div>
+            <p class="section-number">02</p>
+
+            <h2>
+                About
+            </h2>
         </div>
 
-        <div class="about-copy">
-          <p>
-            I am a Software Engineering student interested in building interactive
-            experiences and understanding the systems behind them.
-          </p>
-          <p>
-            My recent projects range from Unity gameplay and visual systems to GPU
-            programming with CUDA. I enjoy breaking down complex problems,
-            refining them for performance, and building the right solution from the ground up.
-          </p>
+    </div>
+
+
+    <div class="about-grid">
+
+        <div class="about-main">
+
+            <p class="about-lead">
+                I am a Software Engineering student interested in
+                Game Development and interactive systems.
+            </p>
+
+            <p>
+                My projects are diverse and creative, working across web development, app design, interactive systems,
+                and core fundamentals like algorithms and data structures.
+                I enjoy figuring out how different pieces fit together and building solid systems around them.
+            </p>
+
+            <p>
+                I am especially interested in gameplay programming,
+                game systems, technical problem solving, and the
+                engineering behind interactive experiences.
+            </p>
+
         </div>
-      </div>
-    </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section container">
-      <div class="section-heading">
-        <p class="eyebrow">03 — TOOLBOX</p>
-        <h2>Skills</h2>
-      </div>
 
-      <div class="skills-grid">
+        <div class="about-meta">
+
+            <div class="meta-item">
+
+                <span class="meta-label">
+                    EDUCATION
+                </span>
+
+                <span>
+                    B.S. Software Engineering
+                </span>
+
+                <span>
+                    Tecnológico de Monterrey
+                </span>
+
+            </div>
+
+
+            <div class="meta-item">
+
+                <span class="meta-label">
+                    CURRENT FOCUS
+                </span>
+
+                <span>
+                    Game Development
+                </span>
+
+                <span>
+                    Software Engineering
+                </span>
+
+            </div>
+
+
+            <div class="meta-item">
+
+                <span class="meta-label">
+                    INTERESTS
+                </span>
+
+                <span>
+                    Gameplay Systems
+                </span>
+
+                <span>
+                    Interactive Systems
+                </span>
+
+                <span>
+                    Technical Problem Solving
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     HOW I USE AI
+========================= -->
+
+<section id="ai" class="section ai-section">
+
+    <div class="section-header">
+
+        <div>
+
+            <p class="section-number">
+                03
+            </p>
+
+            <h2>
+                How I Use AI
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="ai-intro">
+
+        <div class="ai-intro-main">
+
+            <p class="ai-statement">
+                AI is a <font-size: 1.8em;>tool</font> not my replacement.
+            </p>
+
+        </div>
+
+        <div class="ai-intro-text">
+
+            <p>
+                I use conversational LLMs as technical thinking partners.
+                Before asking for help, I try to understand the system
+                myself: its architecture, constraints, existing
+                responsibilities, and what I think a possible solution
+                could look like.
+            </p>
+
+            <p>
+                I then explain that context to the LLM, question its
+                suggestions, compare different approaches, and verify
+                that the reasoning actually fits my project.
+            </p>
+
+            <p>
+                I manually integrate the parts I decide to use and
+                validate the result myself. This keeps me actively
+                involved in the architecture and implementation instead
+                of delegating every step of the development process.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- AI WORKFLOW -->
+
+    <div class="ai-workflow">
+
+        <div class="ai-workflow-header">
+
+            <span class="mono-label">
+                MY WORKFLOW
+            </span>
+
+            <span class="workflow-line"></span>
+
+        </div>
+
+
+        <div class="workflow-grid">
+
+            <div class="workflow-step">
+
+                <span class="workflow-number">
+                    01
+                </span>
+
+                <h3>
+                    Understand
+                </h3>
+
+                <p>
+                    Identify the problem and understand the
+                    architecture I am working with.
+                </p>
+
+            </div>
+
+
+            <div class="workflow-step">
+
+                <span class="workflow-number">
+                    02
+                </span>
+
+                <h3>
+                    Explain
+                </h3>
+
+                <p>
+                    Describe the system, constraints, and my
+                    current reasoning to the LLM.
+                </p>
+
+            </div>
+
+
+            <div class="workflow-step">
+
+                <span class="workflow-number">
+                    03
+                </span>
+
+                <h3>
+                    Challenge
+                </h3>
+
+                <p>
+                    Explore possible approaches, trade-offs,
+                    and unfamiliar concepts.
+                </p>
+
+            </div>
+
+
+            <div class="workflow-step">
+
+                <span class="workflow-number">
+                    04
+                </span>
+
+                <h3>
+                    Verify
+                </h3>
+
+                <p>
+                    Compare the reasoning against the actual
+                    project and question assumptions.
+                </p>
+
+            </div>
+
+
+            <div class="workflow-step">
+
+                <span class="workflow-number">
+                    05
+                </span>
+
+                <h3>
+                    Implement
+                </h3>
+
+                <p>
+                    Manually integrate the approach that makes
+                    sense for the codebase.
+                </p>
+
+            </div>
+
+
+            <div class="workflow-step">
+
+                <span class="workflow-number">
+                    06
+                </span>
+
+                <h3>
+                    Validate
+                </h3>
+
+                <p>
+                    Test the result and make sure I understand
+                    why the solution works.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- AI CASE STUDY -->
+    <div class="ai-case-study">
+
+        <details class="page-dropdown">
+            <summary>
+                    CASE STUDY
+                    <svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+            </svg>
+            </summary>
+
+            <div class="dropdown-content">
+                <div class="case-study-heading">
+
+                    <span class="mono-label">
+                        01.
+                    </span>
+
+                    <h3>
+                        Fire Rescue — Event Queue System
+                    </h3>
+
+                </div>
+
+
+                <div class="case-study-grid">
+
+                    <div class="case-study-problem">
+
+                        <span class="case-label">
+                            THE PROBLEM
+                        </span>
+
+                        <p>
+                            During an explosion, multiple visual effects could
+                            execute simultaneously. Although the underlying
+                            game logic was working, the visual progression became
+                            difficult to follow.
+                        </p>
+
+                        <p>
+                            The existing architecture already separated the
+                            explosion logic from the Unity visualization layer,
+                            so the challenge was finding a way to sequence
+                            visual events without unnecessarily changing those
+                            responsibilities.
+                        </p>
+
+                    </div>
+
+
+                    <div class="case-study-process">
+
+                        <span class="case-label">
+                            HOW AI HELPED
+                        </span>
+
+                        <p>
+                            I described the existing architecture to an LLM,
+                            including the Explosion Manager, the Unity
+                            Visualizer, the event flow, and the behavior I
+                            wanted to achieve.
+                        </p>
+
+                        <p>
+                            Instead of asking for a finished implementation,
+                            I used the conversation to explore how an event
+                            queue could fit into the existing architecture,
+                            discussing event representation, sequencing,
+                            dispatching, and responsibility boundaries.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="architecture">
+
+                    <div class="architecture-label">
+                        ARCHITECTURE
+                    </div>
+
+                    <div class="architecture-flow">
+
+                        <div class="architecture-node">
+                            Explosion Manager
+                        </div>
+
+                        <span class="architecture-arrow">
+                            →
+                        </span>
+
+                        <div class="architecture-node">
+                            Visual Event
+                        </div>
+
+                        <span class="architecture-arrow">
+                            →
+                        </span>
+
+                        <div class="architecture-node highlight-node">
+                            Queue
+                        </div>
+
+                        <span class="architecture-arrow">
+                            →
+                        </span>
+
+                        <div class="architecture-node">
+                            Visual Command
+                        </div>
+
+                        <span class="architecture-arrow">
+                            →
+                        </span>
+
+                        <div class="architecture-node">
+                            Dispatcher
+                        </div>
+
+                        <span class="architecture-arrow">
+                            →
+                        </span>
+
+                        <div class="architecture-node">
+                            Animation
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="case-study-result">
+
+                    <div>
+
+                        <span class="case-label">
+                            WHAT I DID
+                        </span>
+
+                        <p>
+                            I evaluated the approaches against the actual
+                            codebase, selected the event-command approach,
+                            and manually integrated the queue and dispatcher
+                            into the Unity visualization system.
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span class="case-label">
+                            RESULT
+                        </span>
+
+                        <p>
+                            Visual effects could be executed sequentially,
+                            making complex explosion interactions easier
+                            to understand while preserving the existing
+                            separation between simulation logic and
+                            visualization.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="ai-principle">
+
+                    <span class="ai-principle-mark">
+                        "
+                    </span>
+
+                    <p>
+                        I want AI to make me better at understanding software,
+                        not less involved in building it.
+                    </p>
+
+                </div>
+            </div>
+
+        </details>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section id="skills" class="section">
+
+    <div class="section-header">
+
+        <div>
+
+            <p class="section-number">
+                04
+            </p>
+
+            <h2>
+                Skills
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="skills-grid">
+
         <div class="skill-group">
-          <h3>Game Development</h3>
-          <p>Unity · C# · Godot · GDScript · Gameplay Systems · Animation · Physics · UI</p>
+
+            <span class="skill-label">
+                GAME DEVELOPMENT
+            </span>
+
+            <div class="skill-tags">
+
+                <span>Unity</span>
+                <span>C#</span>
+                <span>Godot</span>
+                <span>GDScript</span>
+                <span>Cinemachine</span>
+
+            </div>
+
         </div>
+
 
         <div class="skill-group">
-          <h3>Programming</h3>
-          <p>C++ · CUDA · Python · JavaScript · SQL · R</p>
+
+            <span class="skill-label">
+                PROGRAMMING
+            </span>
+
+            <div class="skill-tags">
+
+                <span>C++</span>
+                <span>Python</span>
+                <span>CUDA</span>
+                <span>R</span>
+                <span>SQL</span>
+                <span>MATLAB</span>
+
+            </div>
+
         </div>
+
 
         <div class="skill-group">
-          <h3>Tools &amp; Systems</h3>
-          <p>Git · GitHub · JSON · APIs · Playwright · Flask · ESP32 · Arduino · Blender</p>
+
+            <span class="skill-label">
+                TOOLS & TECHNOLOGIES
+            </span>
+
+            <div class="skill-tags">
+
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>JSON</span>
+                <span>REST APIs</span>
+                <span>Playwright</span>
+                <span>Flask</span>
+
+            </div>
+
         </div>
-      </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section class="contact container">
-      <p class="eyebrow">04 — LET'S CONNECT</p>
-      <h2>Have a project in mind?</h2>
-      <p>I'm Always open to new projects, collaborations, and conversations with teams building creative things.</p>
 
-      <div class="contact-links">
-        <a href="mailto:alejandro.cm556@gmail.com">Email ↗</a>
-        <a href="https://www.linkedin.com/in/alejandrocontrerasm/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-        <a href="https://github.com/A01662743" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-      </div>
-    </section>
-  </main>
+        <div class="skill-group">
 
-  <footer class="footer container">
-    <span>© <span id="year"></span> Alejandro Contreras Magallanes</span>
-    <span>Built with HTML · CSS · JavaScript</span>
-  </footer>
+            <span class="skill-label">
+                LANGUAGES
+            </span>
 
-  <script src="script.js"></script>
+            <div class="skill-tags">
+
+                <span>Spanish — Native</span>
+                <span>English — C1</span>
+                <span>German — A1</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact" class="section contact-section">
+
+    <div class="contact-content">
+
+        <p class="section-number">
+            05
+        </p>
+
+        <h2>
+            Let's build something.
+        </h2>
+
+        <p>
+            Interested in game development, software engineering,
+            or technical projects? Feel free to explore my work
+            or reach out.
+        </p>
+
+        <div class="contact-links">
+
+            <a
+                href="https://github.com/A01662743"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub ↗
+            </a>
+
+            <a
+                href="mailto:alejandro.cm556@gmail.com"
+            >
+                Email ↗
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <p>
+        © 2026 Alejandro Contreras
+    </p>
+
+    <p class="footer-mono">
+        built with HTML + CSS
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
